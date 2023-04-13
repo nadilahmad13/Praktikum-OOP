@@ -1,5 +1,10 @@
-// 13521024
-// Ahmad Nadil
+/* 
+ * NIM          : 13521024
+ * Nama         : Ahmad Nadil
+ * Praktikum 5  : Generic & Java API
+ * File         : Queue.java
+*/
+
 import java.util.ArrayList;
 
 public class Queue<T>{
