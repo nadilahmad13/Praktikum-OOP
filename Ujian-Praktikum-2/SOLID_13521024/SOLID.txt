@@ -1,0 +1,27 @@
+1) Single Responsibility Principle (SRP)
+- Memindahkan ShoppingCart dari kelas Product ke kelas baru yaitu ShoppingCart.
+Hal ini mendukung SRP karena kelas Product hanya bertanggung jawab untuk mengelola informasi produk, 
+sedangkan kelas ShoppingCart bertanggung jawab untuk mengelola informasi keranjang belanja.
+
+2) Open-Closed Principle (OCP)
+- Menggunakan interface untuk mengelola kelas yang berbeda.
+Hal ini mendukung OCP karena kita dapat menambahkan kelas baru yang mengimplementasikan interface yang sama tanpa mengubah kelas yang sudah ada.
+- Menggunakan abstract class untuk mengelola kelas yang berbeda.
+Hal ini mendukung OCP karena kita dapat menambahkan kelas baru yang mewarisi abstract class yang sama tanpa mengubah kelas yang sudah ada.
+
+3) Liskov Substitution Principle (LSP)
+- Class FoodProduct dan ElectronicProduct yang merupakan subclass dari class Product merupakan salah satu implementasi LSP.
+Hal ini mendukung LSP karena subclass dapat digunakan untuk menggantikan superclassnya tanpa
+mengubah fungsionalitas dari superclassnya.
+
+4) Interface Segregation Principle (ISP)
+- Membuat interface PaymentProcessor yang berisi method processPayment() dan membuat class
+DebitCard, CreditCard, serta Cash yang mengimplementasikan interface PaymentProcessor.
+Sebelumnya dalam PaymentProcessor, terdapat 3 method untuk 3 metode pembayaran yang berbeda,
+hal ini tentunya melanggar ISP karena class PaymentProcessor memiliki banyak method yang tidak
+sebenarnya tidak digunakan.
+
+5) Dependency Inversion Principle (DIP)
+- Membuat Product sebagai abstract class, karena seharusnya higher level module, yaitu electronic product dan
+food product bergantung pada abstraction. Lalu terdapat juga metode calculateTax() yang dijadikan sebagai abstract method,
+dikarenakan terdapat pajak yang berbeda-beda untuk setiap produk
