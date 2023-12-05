@@ -1,0 +1,1 @@
+![](Soal-Responsi-6-7.png)
