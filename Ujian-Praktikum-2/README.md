@@ -1,0 +1,1 @@
+![](Soal-Ujian-Praktikum-2.png)
